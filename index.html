@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +11,9 @@
       padding: 0;
       box-sizing: border-box;
     }
-    html, body {
+
+    html,
+    body {
       min-height: 100%;
       font-family: 'Fira Sans', 'Segoe UI', Arial, sans-serif;
       background: repeating-linear-gradient(-45deg, #f6f7fb 0px, #d4dee8 80px, #50b8e7 160px);
@@ -18,6 +21,7 @@
       display: flex;
       flex-direction: column;
     }
+
     header {
       display: flex;
       align-items: flex-end;
@@ -31,6 +35,7 @@
       z-index: 10;
       flex-wrap: wrap;
     }
+
     header img {
       width: 85px;
       height: 85px;
@@ -41,10 +46,12 @@
       margin-right: 1rem;
       transition: box-shadow 0.4s, filter 0.4s;
     }
+
     header img:hover {
       box-shadow: 0 4px 22px #50b8e7bb;
       filter: brightness(1.12) drop-shadow(0 0 7px #50b8e7);
     }
+
     .personal-info {
       font-size: 1.2rem;
       color: #fff;
@@ -57,11 +64,13 @@
       border-radius: 7px;
       box-shadow: 0 1px 6px #1624470b;
     }
+
     .container {
       display: flex;
       flex: 1;
       min-height: calc(100vh - 120px);
     }
+
     nav.side {
       flex: 0 0 220px;
       background: #e5eafc;
@@ -72,17 +81,20 @@
       border-radius: 0 15px 15px 0;
       margin: 24px 0;
     }
+
     nav ul {
       list-style: none;
       width: 90%;
       margin: 0 auto;
       padding: 2rem 0;
     }
+
     nav li {
       margin-bottom: 18px;
       text-align: left;
       font-size: 1.08rem;
     }
+
     nav a {
       text-decoration: none;
       color: #162447;
@@ -95,23 +107,34 @@
       display: block;
       letter-spacing: 1px;
     }
+
     nav a:hover {
       background: #50b8e7;
       color: #fff;
       border-left: 5px solid #162447;
     }
+
     main {
       flex: 1;
       padding: 2.8rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      animation: fadeInUp 1s cubic-bezier(.41,.81,.97,.37);
+      animation: fadeInUp 1s cubic-bezier(.41, .81, .97, .37);
     }
+
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px);}
-      to { opacity: 1; transform: translateY(0);}
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     .main-section {
       max-width: 680px;
       text-align: left;
@@ -124,10 +147,12 @@
       margin-top: 12px;
       transition: box-shadow 0.23s, border 0.19s;
     }
+
     .main-section:hover {
       border: 1px solid #50b8e7;
       box-shadow: 0 12px 50px #88b6eba5;
     }
+
     .main-section h3 {
       font-size: 1.19rem;
       margin-bottom: 0.2rem;
@@ -136,6 +161,7 @@
       letter-spacing: 2px;
       text-shadow: 0 1px 6px #b9f1ed64;
     }
+
     .main-section h1 {
       font-size: 2.05rem;
       color: #162447;
@@ -144,18 +170,21 @@
       letter-spacing: 3px;
       text-transform: uppercase;
     }
+
     .main-section p {
       font-size: 1.07rem;
       line-height: 2.3;
       margin-bottom: 2.1rem;
       color: #353f74;
     }
+
     .social-container {
       display: flex;
       gap: 18px;
       margin-bottom: 2.1rem;
       flex-wrap: wrap;
     }
+
     .social-container a {
       background: #16244713;
       padding: 0.8rem;
@@ -168,11 +197,13 @@
       place-items: center;
       transition: box-shadow 0.3s, background 0.18s, border-color 0.23s;
     }
+
     .social-container a:hover {
       background: #50b8e7;
       border-color: #00bcd4;
       box-shadow: 0 6px 16px #50b8e70f;
     }
+
     .social-container svg {
       fill: #353f74;
       width: 24px;
@@ -180,27 +211,11 @@
       transition: fill 0.24s;
       display: block;
     }
+
     .social-container a:hover svg {
       fill: #fff;
     }
-    .cv-button {
-      background: linear-gradient(90deg, #00bcd4 10%, #162447 90%);
-      border-radius: 14px;
-      color: #fff;
-      padding: 0.9rem 2.1rem;
-      border: none;
-      font-size: 1.04rem;
-      font-weight: 500;
-      cursor: pointer;
-      letter-spacing: 1.1px;
-      transition: background 0.22s, box-shadow 0.22s;
-      box-shadow: 0 2px 14px #00bcd416;
-    }
-    .cv-button:hover {
-      background: linear-gradient(90deg, #162447 80%, #00bcd4 140%);
-      color: #50b8e7;
-      box-shadow: 0 8px 33px #1624471f;
-    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -212,10 +227,12 @@
       letter-spacing: 1.4px;
       margin-top: auto;
     }
+
     @media (max-width: 900px) {
       .container {
         flex-direction: column;
       }
+
       nav.side {
         flex-direction: row;
         justify-content: space-around;
@@ -224,26 +241,52 @@
         border-right: none;
         border-bottom: 1px solid #50b8e7;
       }
-      nav ul { padding: 1rem 0; }
-      nav li { margin-bottom: 9px; }
-      main { padding: 1rem; }
+
+      nav ul {
+        padding: 1rem 0;
+      }
+
+      nav li {
+        margin-bottom: 9px;
+      }
+
+      main {
+        padding: 1rem;
+      }
     }
+
     @media (max-width: 600px) {
       header img {
         width: 50px;
         height: 50px;
       }
+
       .personal-info {
         font-size: 0.92rem;
         padding: 2px 8px;
       }
-      .main-section { padding: 1.2rem; }
-      .main-section h1 { font-size: 1.14rem; }
-      .social-container a { width: 38px; height: 38px; padding: 0.5rem;}
-      nav.side { border-radius: 0 0 6px 6px;}
+
+      .main-section {
+        padding: 1.2rem;
+      }
+
+      .main-section h1 {
+        font-size: 1.14rem;
+      }
+
+      .social-container a {
+        width: 38px;
+        height: 38px;
+        padding: 0.5rem;
+      }
+
+      nav.side {
+        border-radius: 0 0 6px 6px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -260,8 +303,9 @@
         <li><a href="page3.html">Page 3</a></li>
         <li><a href="lab1.html">Lab 1</a></li>
         <li><a href="lab2.html">Lab 2</a></li>
-        <li><a href="cookie.html">cookie</a></li>
         <li><a href="bootstrap.html">Bootstrap</a></li>
+        <li><a href="cookie.html">Cookie</a></li>
+
         <li><a href="#">Lab 4</a></li>
       </ul>
     </nav>
@@ -280,18 +324,20 @@
             <!-- GitHub SVG Icon -->
             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>GitHub</title>
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.026c-3.338.728-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.235 1.84 1.235 1.07 1.834 2.809 1.304 3.495.997.107-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.932 0-1.311.47-2.381 1.235-3.221-.123-.304-.535-1.527.117-3.18 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.29-1.552 3.295-1.23 3.295-1.23.654 1.653.242 2.876.12 3.18.77.84 1.23 1.91 1.23 3.221 0 4.61-2.805 5.624-5.475 5.921.43.372.823 1.106.823 2.23v3.302c0 .319.218.694.825.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.026c-3.338.728-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.235 1.84 1.235 1.07 1.834 2.809 1.304 3.495.997.107-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.932 0-1.311.47-2.381 1.235-3.221-.123-.304-.535-1.527.117-3.18 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.29-1.552 3.295-1.23 3.295-1.23.654 1.653.242 2.876.12 3.18.77.84 1.23 1.91 1.23 3.221 0 4.61-2.805 5.624-5.475 5.921.43.372.823 1.106.823 2.23v3.302c0 .319.218.694.825.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z" />
             </svg>
           </a>
           <a href="https://x.com/mahirheleke" target="_blank" title="X">
             <!-- X (Twitter) SVG Icon -->
             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>X</title>
-              <path d="M17.773 3.001h3.624l-7.93 9.057 9.415 8.941h-7.226l-5.693-6.796-6.507 6.796H.481l8.477-9.329L-.001 3h7.388l5.066 6.166z"/>
+              <path
+                d="M17.773 3.001h3.624l-7.93 9.057 9.415 8.941h-7.226l-5.693-6.796-6.507 6.796H.481l8.477-9.329L-.001 3h7.388l5.066 6.166z" />
             </svg>
           </a>
         </div>
-        <button class="cv-button">Download CV</button>
+
       </div>
     </main>
   </div>
@@ -300,9 +346,5 @@
     © 2026 Ahmedin Heleke | All Rights Are Reserved
   </footer>
 </body>
+
 </html>
-
-
-
-
-
